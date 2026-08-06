@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Stephanie Loureiro — Software Engineer</title>
+<meta name="description" content="Portfolio of Stephanie Loureiro, Software Engineering student and web developer." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Stephanie Loureiro — Software Engineer" />
+<meta property="og:description" content="Software Engineering student and web developer." />
+<meta property="og:image" content="https://stephanieloureiro.github.io/portfolio/assets/og-image.png" />
+<meta property="og:url" content="https://stephanieloureiro.github.io/portfolio/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Skip link for accessibility -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container">
+    <a href="#top" class="logo">SL<span>.</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#achievements" data-i18n="nav.achievements">Achievements</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <a href="assets/stephanie-loureiro-curriculo-pt.pdf" download id="cvLinkNav" class="btn btn-primary btn-nav-cv" data-i18n="hero.downloadCv">Download CV</a>
+      <div class="lang-toggle" role="group" aria-label="Language switch">
+        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container">
+      <p class="reveal fade-1 hero-greeting" data-i18n="hero.greeting">Hi, I'm</p>
+      <h1 class="reveal fade-2 hero-name">Stephanie Loureiro</h1>
+      <div class="reveal fade-3 hero-roles">
+        <span class="role-text" id="roleText">Estudante de Engenharia de Software</span>
+      </div>
+      <p class="reveal fade-4 hero-description" data-i18n="hero.description">
+      Uno desenvolvimento e design para transformar necessidades reais em aplicações web claras, funcionais e fáceis de usar. Acompanho cada projeto dos primeiros requisitos à publicação.
+      </p>
+      <div class="reveal fade-5 hero-actions">
+        <a href="assets/stephanie-loureiro-curriculo-pt.pdf" download id="cvLink" class="btn btn-primary" data-i18n="hero.downloadCv">Download CV</a>
+        <a href="https://github.com/stephanieloureiro" target="_blank" rel="noreferrer noopener" class="btn btn-icon" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.84 3.13 8.94 7.48 10.39.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.04.66-3.68-1.3-3.68-1.3-.5-1.26-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.19 3.2.91.1-.71.38-1.2.7-1.47-2.43-.28-4.98-1.21-4.98-5.4 0-1.19.42-2.17 1.12-2.94-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.12a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.12 3.02-1.12.6 1.52.22 2.64.11 2.92.7.77 1.12 1.75 1.12 2.94 0 4.2-2.56 5.12-5 5.39.39.34.74 1.01.74 2.03 0 1.47-.01 2.65-.01 3.01 0 .29.2.63.76.52A10.99 10.99 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/stephanieloureirolima" target="_blank" rel="noreferrer noopener" class="btn btn-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.28 2.38 4.28 5.48v6.26zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="mailto:stephanieloureirolima@gmail.com" class="btn btn-icon" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" data-i18n="hero.scroll">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">01 — Intro</span>
+        <h2 data-i18n="about.heading">About</h2>
+      </div>
+      <div class="about-text reveal">
+        <p data-i18n="about.p1">I'm a Software Engineering student and a Systems Development technician
+    trained at SENAI FIRJAN. My journey in technology began with design, and
+    today I combine programming and user experience to create functional,
+    clear, and well-planned digital products.</p>
+        <p data-i18n="about.p2"> I've built and launched two institutional websites, taking part in the
+    entire process — from gathering requirements to deployment. I've also
+    participated in robotics projects, hackathons, and initiatives that
+    encourage women's participation in STEM.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">02 — Journey</span>
+        <h2 data-i18n="experience.heading">Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <span class="timeline-period" data-i18n="experience.period">2023 — Present</span>
+          <h3 data-i18n="experience.title">Freelance Web Developer</h3>
+          <p class="timeline-company" data-i18n="experience.company">Self-employed</p>
+          <ul>
+            <li data-i18n="experience.bullet1">Designed and developed institutional websites end-to-end, from first conversation to deployment.</li>
+            <li data-i18n="experience.bullet2">Delivered projects for public organizations and third-sector entities, including federations and confederations focused on family farming.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">03 — Foundation</span>
+        <h2 data-i18n="education.heading">Education</h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/></svg>
+          </div>
+          <div>
+            <h3>Veiga de Almeida University</h3>
+            <p class="edu-degree" data-i18n="education.uva">Bachelor's in Software Engineering</p>
+            <p class="edu-desc" data-i18n="education.uva.desc">Ongoing degree with a focus on software engineering, systems development, and digital product design.</p>
+            <span class="edu-period">Rio de Janeiro, RJ · 2026 — Present</span>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/></svg>
+          </div>
+          <div>
+            <h3>SENAI FIRJAN</h3>
+            <p class="edu-degree" data-i18n="education.senai">Systems Development Technician</p>
+            <p class="edu-desc" data-i18n="education.senai.desc">Capstone project presented as final coursework, with hands-on experience in web development, APIs, and databases.</p>
+            <span class="edu-period">Rio de Janeiro, RJ · 2023 — 2025</span>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/></svg>
+          </div>
+          <div>
+            <h3>Zion Escola de Entretenimento</h3>
+            <p class="edu-degree" data-i18n="education.zion">Design Master</p>
+            <p class="edu-desc" data-i18n="education.zion.desc">Graphic design, UI/UX, Adobe Creative Cloud, 3D modeling, ZBrush, and Autodesk Maya.</p>
+            <span class="edu-period">Rio de Janeiro, RJ · 2019 — 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">04 — Work</span>
+        <h2 data-i18n="projects.heading">Projects</h2>
+        <p class="section-sub" data-i18n="projects.sub">A selection of things I've built.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-cover"><img src="assets/projects/feaferj.svg" alt="FEAFERJ" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>FEAFERJ</h3>
+            <p data-i18n="projects.feaferj">Institutional website developed for the Rio de Janeiro State Federation of Family Farmers, built to give the organization a clear, accessible presence online.</p>
+            <div class="tags">
+              <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Prisma</span><span class="tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/stephanieloureiro/feaferj" target="_blank" rel="noreferrer noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.84 3.13 8.94 7.48 10.39.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.04.66-3.68-1.3-3.68-1.3-.5-1.26-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.19 3.2.91.1-.71.38-1.2.7-1.47-2.43-.28-4.98-1.21-4.98-5.4 0-1.19.42-2.17 1.12-2.94-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.12a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.12 3.02-1.12.6 1.52.22 2.64.11 2.92.7.77 1.12 1.75 1.12 2.94 0 4.2-2.56 5.12-5 5.39.39.34.74 1.01.74 2.03 0 1.47-.01 2.65-.01 3.01 0 .29.2.63.76.52A10.99 10.99 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+                <span data-i18n="projects.code">Code</span>
+              </a>
+              <a href="https://feaferj.org.br" target="_blank" rel="noreferrer noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                <span data-i18n="projects.demo">Demo</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-cover"><img src="assets/projects/cobraf.svg" alt="COBRAF" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>COBRAF</h3>
+            <p data-i18n="projects.cobraf">Institutional website developed for the Brazilian Confederation of Family Farming, translating the organization's national scope into a fast, well-structured site.</p>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">TypeScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/stephanieloureiro/cobraf" target="_blank" rel="noreferrer noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.84 3.13 8.94 7.48 10.39.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.04.66-3.68-1.3-3.68-1.3-.5-1.26-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.19 3.2.91.1-.71.38-1.2.7-1.47-2.43-.28-4.98-1.21-4.98-5.4 0-1.19.42-2.17 1.12-2.94-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.12a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.12 3.02-1.12.6 1.52.22 2.64.11 2.92.7.77 1.12 1.75 1.12 2.94 0 4.2-2.56 5.12-5 5.39.39.34.74 1.01.74 2.03 0 1.47-.01 2.65-.01 3.01 0 .29.2.63.76.52A10.99 10.99 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+                <span data-i18n="projects.code">Code</span>
+              </a>
+              <a href="https://cobraf.agr.br" target="_blank" rel="noreferrer noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                <span data-i18n="projects.demo">Demo</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-cover"><img src="assets/projects/fire-ethics.svg" alt="Fire Ethics" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>Fire Ethics</h3>
+            <p data-i18n="projects.fireEthics">Built during the Hack & Ética: Grand Prix de Soluções Éticas. An HR tool that uses AI to reduce bias in hiring and make recruitment more ethical and inclusive.</p>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">AI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/stephanieloureiro/fire-ethics" target="_blank" rel="noreferrer noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.84 3.13 8.94 7.48 10.39.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.04.66-3.68-1.3-3.68-1.3-.5-1.26-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.19 3.2.91.1-.71.38-1.2.7-1.47-2.43-.28-4.98-1.21-4.98-5.4 0-1.19.42-2.17 1.12-2.94-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.12a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.12 3.02-1.12.6 1.52.22 2.64.11 2.92.7.77 1.12 1.75 1.12 2.94 0 4.2-2.56 5.12-5 5.39.39.34.74 1.01.74 2.03 0 1.47-.01 2.65-.01 3.01 0 .29.2.63.76.52A10.99 10.99 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+                <span data-i18n="projects.code">Code</span>
+              </a>
+              <span class="domain-soon" data-i18n="projects.domainSoon">Domain coming soon</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-cover"><img src="assets/projects/evencity.svg" alt="EvenCity" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>EvenCity</h3>
+            <p data-i18n="projects.evencity">An academic project that generates personalized itineraries, helping people plan multiple stops and visit several places in a single day.</p>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">REST APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/stephanieloureiro/evencity" target="_blank" rel="noreferrer noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.84 3.13 8.94 7.48 10.39.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.04.66-3.68-1.3-3.68-1.3-.5-1.26-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.19 3.2.91.1-.71.38-1.2.7-1.47-2.43-.28-4.98-1.21-4.98-5.4 0-1.19.42-2.17 1.12-2.94-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.12a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.12 3.02-1.12.6 1.52.22 2.64.11 2.92.7.77 1.12 1.75 1.12 2.94 0 4.2-2.56 5.12-5 5.39.39.34.74 1.01.74 2.03 0 1.47-.01 2.65-.01 3.01 0 .29.2.63.76.52A10.99 10.99 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+                <span data-i18n="projects.code">Code</span>
+              </a>
+              <a href="https://evencity-ozty.onrender.com/" target="_blank" rel="noreferrer noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                <span data-i18n="projects.demo">Website</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">05 — Toolkit</span>
+        <h2 data-i18n="skills.heading">Skills</h2>
+        <p class="section-sub" data-i18n="skills.sub">Technologies I work with — and a few I'm currently exploring.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3 data-i18n="skills.languages">Languages</h3>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">HTML5</span><span class="tag">CSS3</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3 data-i18n="skills.frontend">Frontend</h3>
+          <div class="tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">Responsive Design</span><span class="tag">UI/UX</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3 data-i18n="skills.backend">Backend</h3>
+          <div class="tags"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">REST APIs</span><span class="tag">Prisma ORM</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3 data-i18n="skills.databases">Databases</h3>
+          <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">Supabase</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3 data-i18n="skills.tools">Tools</h3>
+          <div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Vercel</span><span class="tag">VS Code</span><span class="tag">Figma</span><span class="tag">Adobe Creative Cloud</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">06 — Milestones</span>
+        <h2 data-i18n="achievements.heading">Achievements</h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="achievements.ninja.title">Ninja Tigers Robotics Team — Firjan SESI</h3>
+            <p data-i18n="achievements.ninja.desc">Took part in collaborative robotics and software projects, contributing with programming, problem-solving, and teamwork. Ninja Tigers placed runner-up (2nd place) at the FIRA World Cup Robotics 2023 — I was part of the team during that period, though I didn't attend the competition in person; other members represented the team on-site.</p>
+          </div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="achievements.hack.title">Hack & Ética — Grand Prix de Soluções Éticas</h3>
+            <p data-i18n="achievements.hack.desc">Participated in the 2024 and 2025 editions, collaborating on Fire Ethics, an AI prototype for ethical analysis of hiring processes, and Lupix, an app to combat cyberbullying.</p>
+          </div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="achievements.moi.title">MOI — Meninas Olímpicas do IMPA</h3>
+            <p data-i18n="achievements.moi.desc">Took part in an initiative by the Institute for Pure and Applied Mathematics (IMPA) that encourages women's presence in Mathematics, Computer Science, and STEM fields.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">07 — Get in touch</span>
+        <h2 data-i18n="contact.heading">Contact</h2>
+        <p class="section-sub" data-i18n="contact.sub">Have an opportunity, a project, or just want to say hi? My inbox is open.</p>
+      </div>
+
+      <div class="contact-list">
+        <a href="mailto:stephanieloureirolima@gmail.com" class="contact-item reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+          </div>
+          <div>
+            <span class="contact-label" data-i18n="contact.email">Email</span>
+            <span class="contact-value">stephanieloureirolima@gmail.com</span>
+          </div>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+        <a href="https://github.com/stephanieloureiro" target="_blank" rel="noreferrer noopener" class="contact-item reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.84 3.13 8.94 7.48 10.39.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.04.66-3.68-1.3-3.68-1.3-.5-1.26-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.19 3.2.91.1-.71.38-1.2.7-1.47-2.43-.28-4.98-1.21-4.98-5.4 0-1.19.42-2.17 1.12-2.94-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.12a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.12 3.02-1.12.6 1.52.22 2.64.11 2.92.7.77 1.12 1.75 1.12 2.94 0 4.2-2.56 5.12-5 5.39.39.34.74 1.01.74 2.03 0 1.47-.01 2.65-.01 3.01 0 .29.2.63.76.52A10.99 10.99 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+          </div>
+          <div>
+            <span class="contact-label" data-i18n="contact.github">GitHub</span>
+            <span class="contact-value">github.com/stephanieloureiro</span>
+          </div>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/stephanieloureirolima" target="_blank" rel="noreferrer noopener" class="contact-item reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.28 2.38 4.28 5.48v6.26zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </div>
+          <div>
+            <span class="contact-label" data-i18n="contact.linkedin">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/stephanieloureirolima</span>
+          </div>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+        <a href="https://stephanieloureiro.github.io/portfolio/" target="_blank" rel="noreferrer noopener" class="contact-item reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>
+          </div>
+          <div>
+            <span class="contact-label" data-i18n="contact.website">Website</span>
+            <span class="contact-value">stephanieloureiro.github.io/portfolio</span>
+          </div>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Stephanie Loureiro. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <p class="footer-built" data-i18n="footer.built">Built with HTML, CSS & JavaScript.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
