@@ -73,6 +73,15 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 /* ============================================
    LAYOUT HELPERS
    ============================================ */
+main { display: flex; flex-direction: column; }
+#projects { order: 1; }
+#about { order: 2; }
+#experience { order: 3; padding-bottom: 56px; }
+#education { order: 4; padding-top: 0; }
+#skills { order: 5; }
+#achievements { order: 6; }
+#contact { order: 7; }
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -293,6 +302,18 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 @media (max-width: 760px) { .projects-grid { grid-template-columns: 1fr; } }
 
+.project-card:first-child {
+  grid-column: 1 / -1;
+}
+
+.project-card:first-child .project-cover {
+  aspect-ratio: 21/9;
+}
+
+@media (max-width: 760px) {
+  .project-card:first-child .project-cover { aspect-ratio: 16/10; }
+}
+
 .project-card {
   border: 1px solid var(--border); border-radius: 20px; overflow: hidden;
   background: var(--card); display: flex; flex-direction: column;
@@ -333,6 +354,21 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .skill-card { border: 1px solid var(--border); border-radius: 18px; padding: 24px; }
 .skill-card h3 { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--muted-fg); margin-bottom: 16px; }
 .skill-card .tag { background: var(--bg); }
+.skill-icons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.skill-pill {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+.skill-pill img { width: 21px; height: 21px; flex-shrink: 0; }
 
 /* ============================================
    ACHIEVEMENTS
