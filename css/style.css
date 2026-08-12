@@ -74,11 +74,11 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
    LAYOUT HELPERS
    ============================================ */
 main { display: flex; flex-direction: column; }
-#projects { order: 1; padding-top: 72px; }
-#about { order: 2; padding-bottom: 28px; background: var(--muted); }
-#experience { order: 3; padding-top: 0; padding-bottom: 28px; background: var(--muted); }
-#education { order: 4; padding-top: 0; padding-bottom: 28px; background: var(--muted); }
-#skills { order: 5; }
+#skills { order: 1; padding-top: 72px; padding-bottom: 72px; }
+#projects { order: 2; padding-top: 72px; }
+#about { order: 3; padding-bottom: 28px; background: var(--muted); }
+#experience { order: 4; padding-top: 0; padding-bottom: 28px; background: var(--muted); }
+#education { order: 5; padding-top: 0; padding-bottom: 28px; background: var(--muted); }
 #achievements { order: 6; padding-top: 0; background: var(--muted); }
 #contact { order: 7; }
 

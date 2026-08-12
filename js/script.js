@@ -11,7 +11,7 @@
       "hero.greeting": "Hi, I'm",
       "hero.description": "I combine development and design to turn real needs into clear, functional web applications. I take each project from initial requirements to launch.",
       "hero.downloadCv": "Download CV",
-      "hero.scroll": "View projects",
+      "hero.scroll": "View skills",
       "about.heading": "About",
       "about.p1": "I'm a Software Engineering student, Systems Development technician, and web developer with a design background. I like building interfaces that are clear, useful, and grounded in real user needs.",
       "about.p2": "I've delivered institutional websites from requirements to deployment, working across structure, interface, implementation, testing, and publication.",
@@ -63,7 +63,7 @@
       "hero.greeting": "Olá, eu sou",
       "hero.description": "Uno desenvolvimento e design para transformar necessidades reais em aplicações web claras, funcionais e fáceis de usar. Acompanho cada projeto dos primeiros requisitos à publicação.",
       "hero.downloadCv": "Baixar CV",
-      "hero.scroll": "Ver projetos",
+      "hero.scroll": "Ver habilidades",
       "about.heading": "Sobre",
       "about.p1": "Sou estudante de Engenharia de Software, técnica em Desenvolvimento de Sistemas e desenvolvedora web com base em design. Gosto de criar interfaces claras, úteis e pensadas para necessidades reais.",
       "about.p2": "Já entreguei sites institucionais do levantamento de requisitos ao deploy, atuando em estrutura, interface, implementação, testes e publicação.",
@@ -251,7 +251,7 @@
   /* ============================================
      ACTIVE SECTION HIGHLIGHT
      ============================================ */
-  var sections = ["projects", "about", "experience", "skills", "contact"];
+  var sections = ["skills", "projects", "about", "experience", "contact"];
   var navAnchors = document.querySelectorAll(".nav-links a");
 
   var sectionObserver = new IntersectionObserver(function (entries) {
