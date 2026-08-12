@@ -305,17 +305,20 @@ main { display: flex; flex-direction: column; }
    ============================================ */
 .journey-overview {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 22px;
-  align-items: end;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: clamp(20px, 4vw, 42px);
+  align-items: center;
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: clamp(20px, 3vw, 28px);
   background: color-mix(in srgb, var(--card) 88%, transparent);
   box-shadow: var(--shadow);
 }
+.journey-copy {
+  min-width: 0;
+}
 .journey-lead {
-  max-width: 620px;
+  max-width: 680px;
   color: var(--fg);
   font-size: clamp(1.08rem, 2vw, 1.35rem);
   line-height: 1.45;
@@ -340,11 +343,13 @@ main { display: flex; flex-direction: column; }
   display: grid;
   grid-template-columns: repeat(2, minmax(92px, 1fr));
   gap: 10px;
-  min-width: 260px;
 }
 .journey-stats div {
-  border-left: 1px solid var(--border);
-  padding-left: 14px;
+  min-height: 92px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  background: var(--accent-soft);
 }
 .journey-stats strong {
   display: block;
@@ -374,9 +379,6 @@ main { display: flex; flex-direction: column; }
 }
 .journey-panel-feature {
   grid-row: span 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   min-height: 360px;
   background:
     linear-gradient(135deg, color-mix(in srgb, var(--accent-soft) 55%, transparent), transparent 58%),
@@ -405,7 +407,7 @@ main { display: flex; flex-direction: column; }
   line-height: 1.35;
   font-weight: 600;
 }
-.journey-panel-feature > h3 {
+.journey-role h3 {
   max-width: 520px;
   font-size: clamp(1.35rem, 3vw, 2rem);
   line-height: 1.15;
@@ -418,7 +420,7 @@ main { display: flex; flex-direction: column; }
 .journey-impact-list {
   display: grid;
   gap: 10px;
-  margin-top: 28px;
+  margin-top: 34px;
 }
 .journey-impact-list p {
   border-top: 1px solid var(--border);
@@ -464,12 +466,10 @@ main { display: flex; flex-direction: column; }
 @media (max-width: 900px) {
   .journey-overview,
   .journey-board { grid-template-columns: 1fr; }
-  .journey-stats { min-width: 0; }
   .journey-panel-feature { min-height: 0; }
 }
 @media (max-width: 560px) {
   .journey-stats { grid-template-columns: 1fr; }
-  .journey-stats div { border-left: 0; border-top: 1px solid var(--border); padding: 12px 0 0; }
   .journey-panel-head { align-items: flex-start; flex-direction: column; }
 }
 /* ============================================
