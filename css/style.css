@@ -85,11 +85,8 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 main { display: flex; flex-direction: column; }
 #skills { order: 1; padding-top: 72px; padding-bottom: 72px; background: color-mix(in srgb, var(--accent-soft) 28%, var(--bg)); }
 #projects { order: 2; padding-top: 72px; background: var(--bg); }
-#about { order: 3; padding-bottom: 28px; background: linear-gradient(180deg, var(--muted), color-mix(in srgb, var(--muted) 70%, var(--bg))); }
-#experience { order: 4; padding-top: 0; padding-bottom: 28px; background: color-mix(in srgb, var(--muted) 76%, var(--bg)); }
-#education { order: 5; padding-top: 0; padding-bottom: 28px; background: color-mix(in srgb, var(--muted) 76%, var(--bg)); }
-#achievements { order: 6; padding-top: 0; background: linear-gradient(180deg, color-mix(in srgb, var(--muted) 76%, var(--bg)), var(--bg)); }
-#contact { order: 7; }
+#journey { order: 3; background: linear-gradient(180deg, var(--muted), color-mix(in srgb, var(--muted) 70%, var(--bg))); }
+#contact { order: 4; }
 
 .container {
   max-width: var(--max-width);
@@ -304,9 +301,96 @@ main { display: flex; flex-direction: column; }
 @keyframes heroIn { to { opacity: 1; transform: translateY(0); } }
 
 /* ============================================
-   ABOUT
+   JOURNEY
    ============================================ */
 .about-text { display: grid; gap: 14px; max-width: 760px; font-size: 1rem; line-height: 1.7; color: var(--muted-fg); }
+.journey-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.75fr) minmax(0, 1.25fr);
+  gap: 28px;
+  align-items: start;
+}
+.journey-summary {
+  position: sticky;
+  top: 92px;
+  display: grid;
+  gap: 14px;
+  color: var(--muted-fg);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.journey-summary::before {
+  content: "";
+  width: 54px;
+  height: 2px;
+  background: var(--accent);
+}
+.journey-stack { display: grid; gap: 14px; }
+.journey-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+.journey-label {
+  display: block;
+  margin-bottom: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.journey-card h3 { font-size: 1.02rem; font-weight: 600; }
+.journey-meta,
+.journey-list span {
+  margin-top: 4px;
+  color: var(--muted-fg);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.journey-card ul {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+.journey-card li,
+.journey-list p {
+  color: var(--muted-fg);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.journey-card li {
+  position: relative;
+  padding-left: 16px;
+}
+.journey-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+.journey-list {
+  display: grid;
+  gap: 16px;
+}
+.journey-list > div {
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.journey-list > div:first-child { padding-top: 0; border-top: 0; }
+.journey-list.compact { gap: 14px; }
+@media (max-width: 860px) {
+  .journey-layout { grid-template-columns: 1fr; }
+  .journey-summary { position: static; }
+}
 
 /* ============================================
    TIMELINE (Experience)
