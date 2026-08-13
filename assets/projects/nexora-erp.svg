@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Nexora ERP project preview</title>
+  <desc id="desc">Stylized dashboard interface with ERP metrics, tables, and navigation panels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.52" stop-color="#111827"/>
+      <stop offset="1" stop-color="#164e63"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".07"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="0" fill="url(#bg)"/>
+  <g opacity=".18">
+    <circle cx="1030" cy="120" r="220" fill="#38bdf8"/>
+    <circle cx="120" cy="680" r="260" fill="#22c55e"/>
+  </g>
+  <rect x="94" y="86" width="1012" height="588" rx="34" fill="#020617" opacity=".72"/>
+  <rect x="132" y="124" width="222" height="512" rx="24" fill="url(#panel)" stroke="#ffffff" stroke-opacity=".14"/>
+  <rect x="386" y="124" width="682" height="512" rx="24" fill="url(#panel)" stroke="#ffffff" stroke-opacity=".14"/>
+  <text x="168" y="184" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Nexora</text>
+  <text x="169" y="214" fill="#67e8f9" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3">ERP</text>
+  <g fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="18" opacity=".82">
+    <text x="168" y="292">Dashboard</text>
+    <text x="168" y="350">Products</text>
+    <text x="168" y="408">Orders</text>
+    <text x="168" y="466">Clients</text>
+    <text x="168" y="524">Reports</text>
+  </g>
+  <g fill="#38bdf8">
+    <rect x="152" y="273" width="8" height="24" rx="4"/>
+    <rect x="152" y="331" width="8" height="24" rx="4" opacity=".45"/>
+    <rect x="152" y="389" width="8" height="24" rx="4" opacity=".45"/>
+    <rect x="152" y="447" width="8" height="24" rx="4" opacity=".45"/>
+    <rect x="152" y="505" width="8" height="24" rx="4" opacity=".45"/>
+  </g>
+  <text x="430" y="190" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Business Control</text>
+  <text x="430" y="224" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="17">Inventory, orders, clients, and operational indicators.</text>
+  <g>
+    <rect x="430" y="270" width="172" height="118" rx="22" fill="#0f172a" stroke="#ffffff" stroke-opacity=".12"/>
+    <rect x="626" y="270" width="172" height="118" rx="22" fill="#0f172a" stroke="#ffffff" stroke-opacity=".12"/>
+    <rect x="822" y="270" width="172" height="118" rx="22" fill="#0f172a" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="458" y="318" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="16">Revenue</text>
+    <text x="458" y="354" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">+24%</text>
+    <text x="654" y="318" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="16">Orders</text>
+    <text x="654" y="354" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">1.2k</text>
+    <text x="850" y="318" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="16">Stock</text>
+    <text x="850" y="354" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">384</text>
+  </g>
+  <rect x="430" y="426" width="564" height="152" rx="22" fill="#0f172a" stroke="#ffffff" stroke-opacity=".12"/>
+  <g stroke="#334155" stroke-width="2">
+    <path d="M462 476h500"/>
+    <path d="M462 520h500"/>
+    <path d="M462 562h500"/>
+  </g>
+  <g fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="17">
+    <text x="462" y="460">Recent operations</text>
+    <text x="462" y="504">Order #1028</text>
+    <text x="462" y="548">Inventory update</text>
+    <text x="720" y="504">Completed</text>
+    <text x="720" y="548">In review</text>
+  </g>
+  <g fill="#22c55e">
+    <rect x="892" y="488" width="70" height="22" rx="11"/>
+    <rect x="892" y="532" width="70" height="22" rx="11" opacity=".75"/>
+  </g>
+</svg>
